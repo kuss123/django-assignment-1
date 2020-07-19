@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blogs</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/blo.css' %}" />
+
+</head>
+<body>
+
+<div class="home font">
+    <a href="{% url 'blog:home' %}">Home</a>
+</div>
+
+<div class="tab">
+    <table class="font">
+    <tr>
+        <th>ID</th>
+        <th>Blog</th>
+        <th>Created at</th>
+        <th>Updated at</th>
+        <th>Author</th>
+    </tr>
+    {%for i in obj%}
+    <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.blog}}</td>
+        <td>{{i.created_at}}</td>
+        <td>{{i.updated_at}}</td>
+        <td>
+            {{i.author.name}}|
+            <a href="/author/{{i.id}}" class="link font">Details</a>
+        </td>
+    </tr>
+    {%endfor%}
+</table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #8ab7ff ;
+    }
+
+
+.font{
+    font-family: roboto;
+}
+.back{
+    margin:20px;
+    margin-left: 93%;
+    font-size:25px;
+    width: 100%;
+    transition: all 400ms ease-in-out;
+}
+
+.back a{
+        text-decoration: none;
+        padding:5px;
+        border: 3px solid #ffffff;
+        color: #000000;
+}
+.back a:hover{
+            background-color: #ffffff;
+            color: #8ab7ff;
+            border-color: transparent;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 85%;
+  height: 30vh;
+  margin: 80px;
+  text-align: center;
+}
+
+.name{
+        padding-top: 15px;
+}
+
+.email {
+  color: grey;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.address{
+    padding:5px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url("background_home.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.font{
+    font-family: roboto;
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+    font-size: 42px;
+    margin-top: 20%;
+    margin-bottom: 10px;
+}
+
+
+.blog{
+
+    float: center;
+    margin-left: 45%;
+    padding:5px;
+    font-size:30px;
+    background-color: #ffffff;
+    width: 190px;
+}
+
+.blog a{
+        text-decoration: none;
+         color: #000000;
+}
+.blog a:hover{
+            color: #3a81f2;
+}
+
